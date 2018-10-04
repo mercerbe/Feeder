@@ -48,6 +48,10 @@ app.get(
 );
 //++google auth route -- authenticate user via google+++//
 
+// +++ resolve profile  +++//
+app.get("/auth/google/callback", passport.authenticate("google"));
+//+++ resolve profile +++//
+
 //============================routes============================//
 
 //============================server=============================//
