@@ -18,7 +18,7 @@ passport.use(
   new GoogleStrategy(
     {
       clientID: keys.googleClientID,
-      clientSecret: keys.googleClientSecret,
+      clientSecret: keys.googleClientSecrect,
       callbackURL: "/auth/google/callback"
     },
     accessToken => {
@@ -29,7 +29,7 @@ passport.use(
 //============================passport/googleAuth==================//
 
 //============================routes==============================//
-
+//NOTES
 //+++google auth route -- authenticate user via google++//
 //'google' string = GoogleStrategy
 //https://accounts.google.com/o/oauth2/v2/auth?
